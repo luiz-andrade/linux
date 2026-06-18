@@ -33,7 +33,7 @@ Ao limpar arquivos de log de processos ativos (como Nginx, Apache ou serviços e
 ### Comando Padrão
 Extrai as últimas 100 linhas do log de acesso do Nginx para um arquivo temporário, sobrescreve o arquivo original mantendo o inode intacto e apaga o temporário:
 ```bash
-sh -c 'tail -n 100 /docker/producao/nginx/logs/access.log > /tmp/docker_log_temp && cat /tmp/docker_log_temp > /docker/producao/nginx/logs/access.log && rm /tmp/docker_log_temp'
+sh -c 'tail -n 100 /nginx/logs/access.log > /tmp/docker_log_temp && cat /tmp/docker_log_temp > /nginx/logs/access.log && rm /tmp/docker_log_temp'
 ```
 
 ### 💡 Dica Técnica:
