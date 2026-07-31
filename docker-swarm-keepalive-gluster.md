@@ -1,4 +1,4 @@
-Analise as instruções abaixo e complete a documentação:
+# Laboratório
 GlusterFS Volume (/docker)
 Nó 01 (MASTER)
 DOCKER SWARM
