@@ -113,3 +113,7 @@ truncate -s 0 /var/lib/docker/containers/xpto/xpto-json.log
   ```bash
   docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
   ```
+* tamanho das pastas
+  ```bash
+  sudo du -hx --max-depth=1 / | sort -rh
+  ```
