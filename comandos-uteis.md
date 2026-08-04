@@ -109,3 +109,7 @@ truncate -s 0 /var/lib/docker/containers/xpto/xpto-json.log
     grep -rnw '/nome-pasta' --exclude='*.log' -e 'texto-procurado'
     ```
 
+* docker ps com portas expostas
+  ```bash
+  docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Ports}}"
+  ```
