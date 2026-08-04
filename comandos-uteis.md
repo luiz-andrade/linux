@@ -97,3 +97,8 @@ truncate -s 0 /var/lib/docker/containers/xpto/xpto-json.log
     ```bash
     sudo systemctl restart docker
     ```
+
+### Adicionar permissão de grupos em pasta e subpastas
+    ```bash
+    sudo chgrp -R g_tech /nome/pasta/ && sudo chmod -R g+rwx /nome/pasta/ && sudo chmod -R g+s /nome/pasta/ && cd /nome/pasta && umask 007
+    ```
